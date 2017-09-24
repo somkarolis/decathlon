@@ -11,11 +11,13 @@ import java.util.List;
 
 public class InputFileReader {
     private List<Participant> participants;
+    //default input file name
+    private String inputFileName = "Decathlon_input";
     BufferedReader br;
 
     public List<Participant> readFile() throws FileNotFoundException, IOException {
         participants = new ArrayList<>();
-        br = new BufferedReader(new FileReader("C:/Users/somka/Documents/Java/decathlon/Decathlon_input.txt"));
+        br = new BufferedReader(new FileReader("C:/Users/somka/Documents/Java/decathlon/" + inputFileName + ".txt"));
         String line;
 
         while ((line = br.readLine()) != null && !line.isEmpty()) {
@@ -31,4 +33,7 @@ public class InputFileReader {
         return participants;
     }
 
+    public void setInputFileName(String inputFileName) {
+        this.inputFileName = inputFileName;
+    }
 }
