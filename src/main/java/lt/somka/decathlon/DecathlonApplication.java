@@ -1,6 +1,7 @@
 package lt.somka.decathlon;
 
-import lt.somka.decathlon.calculator.ScoreCalculator;
+import lt.somka.decathlon.calculations.PlacesCalculator;
+import lt.somka.decathlon.calculations.ScoreCalculator;
 import lt.somka.decathlon.input.InputFileReader;
 
 import java.io.IOException;
@@ -10,10 +11,16 @@ public class DecathlonApplication {
     public static void main(String[] args) {
         InputFileReader reader = new InputFileReader();
         ScoreCalculator calc = new ScoreCalculator();
+        List<Participant> participants;
+        PlacesCalculator placesCalculator;
         try {
-            List<Participant> participants = reader.readFile();
+            participants = reader.readFile();
             for (Participant participant : participants) {
-                participant.setScore(calc.calculateScore(participant));
+                calc.calculateScore(participant);
+            }
+            placesCalculator = new PlacesCalculator(participants);
+            placesCalculator.sortParticipants();
+            for (Participant participant : participants) {
                 System.out.println(participant);
             }
         } catch (IOException ex) {

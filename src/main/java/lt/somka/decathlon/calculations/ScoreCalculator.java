@@ -1,4 +1,4 @@
-package lt.somka.decathlon.calculator;
+package lt.somka.decathlon.calculations;
 
 import lt.somka.decathlon.Participant;
 
@@ -36,7 +36,7 @@ public class ScoreCalculator {
         return score;
     }
 
-    public Integer calculateScore(Participant participant) {
+    public void calculateScore(Participant participant) {
         Integer score =
                 //100m
                 calculateTrackEvent(25.4347, 18, 1.81, participant.getEventResult(0)) +
@@ -67,7 +67,8 @@ public class ScoreCalculator {
 
                 //1500m
                 calculateTrackEvent(0.03768, 480, 1.85, participant.getLastEventResult());
-        return score;
+
+        participant.setScore(score);
     }
 
 }
