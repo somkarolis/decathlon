@@ -11,9 +11,8 @@ import java.util.List;
 
 public class InputFileReader {
     private List<Participant> participants;
-    //default input file name
     private String inputFileName;
-    BufferedReader br;
+    private BufferedReader br;
 
     public List<Participant> readFile() throws FileNotFoundException, IOException {
         participants = new ArrayList<>();

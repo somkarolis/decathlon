@@ -31,10 +31,17 @@ public class UI {
     }
 
     public void initialize() {
-        start();
-        readFile();
-        calculate();
-        provideOutput();
+        try {
+            start();
+            readFile();
+            calculate();
+            provideOutput();
+            end();
+        } catch (FileNotFoundException ex) {
+            System.out.println("File not found");
+        } catch (IOException ex) {
+            System.out.println(ex.getStackTrace());
+        }
     }
 
     private void start() {
@@ -51,16 +58,9 @@ public class UI {
         }
     }
 
-    private void readFile() {
+    private void readFile() throws FileNotFoundException, IOException{
         fileReader.setInputFileName(input);
-        try {
-            participants = fileReader.readFile();
-        } catch (FileNotFoundException ex) {
-            System.out.println("File not found");
-        }
-        catch (IOException ex) {
-            System.out.println(ex.getStackTrace());
-        }
+        participants = fileReader.readFile();
     }
 
     private void calculate() {
@@ -75,5 +75,10 @@ public class UI {
     private void provideOutput() {
         writer.setOutput(output);
         writer.writeXML(placedParticipants);
+    }
+
+    private void end() {
+        System.out.println("Calculations are completed.");
+        System.out.println("See " + output + ".xml file for results.");
     }
 }

@@ -31,7 +31,22 @@
 <Score>3499</Score>
 </participant>
 <participant>
-<place>3-4</place>
+<place>3-5</place>
+<Name>Second Duplicate Guy</Name>
+<Event1>13.04</Event1>
+<Event2>4.53</Event2>
+<Event3>7.79</Event3>
+<Event4>1.55</Event4>
+<Event5>64.72</Event5>
+<Event6>18.74</Event6>
+<Event7>24.20</Event7>
+<Event8>2.40</Event8>
+<Event9>28.20</Event9>
+<Event10>6.50.76 </Event10>
+<Score>3205</Score>
+</participant>
+<participant>
+<place>3-5</place>
 <Name>Beata Kana</Name>
 <Event1>13.04</Event1>
 <Event2>4.53</Event2>
@@ -46,7 +61,7 @@
 <Score>3205</Score>
 </participant>
 <participant>
-<place>3-4</place>
+<place>3-5</place>
 <Name>Duplicate Guy</Name>
 <Event1>13.04</Event1>
 <Event2>4.53</Event2>
@@ -61,7 +76,7 @@
 <Score>3205</Score>
 </participant>
 <participant>
-<place>5</place>
+<place>6</place>
 <Name>Anti Loop</Name>
 <Event1>13.43</Event1>
 <Event2>4.35</Event2>

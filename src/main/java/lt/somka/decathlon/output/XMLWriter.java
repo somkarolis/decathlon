@@ -35,6 +35,7 @@ public class XMLWriter {
                     doc.createElement("participants");
             //append root element to document
             doc.appendChild(rootElement);
+            //add stylesheet to document
             doc.insertBefore(pi, rootElement);
 
             for (Map.Entry<Participant, String> entry : placedParticipants.entrySet()) {
@@ -46,7 +47,7 @@ public class XMLWriter {
                         entry.getKey().getResults().get(9), entry.getKey().getScore()));
             }
 
-            //for output to file, console
+            //for output to file
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             //for pretty print
@@ -60,7 +61,6 @@ public class XMLWriter {
 
             //write data
             transformer.transform(source, file);
-            System.out.println("DONE");
 
         } catch (Exception e) {
             e.printStackTrace();
