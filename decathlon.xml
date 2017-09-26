@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="decathlon.xsl"?><participants>
+<participant>
+<place>1</place>
+<Name>Siim Susi</Name>
+<Event1>12.61</Event1>
+<Event2>5.00</Event2>
+<Event3>9.22</Event3>
+<Event4>1.50</Event4>
+<Event5>60.39</Event5>
+<Event6>16.43</Event6>
+<Event7>21.60</Event7>
+<Event8>2.60</Event8>
+<Event9>35.81</Event9>
+<Event10>5.25.72 </Event10>
+<Score>4205</Score>
+</participant>
+<participant>
+<place>2</place>
+<Name>Jaana Lind</Name>
+<Event1>13.75</Event1>
+<Event2>4.84</Event2>
+<Event3>10.12</Event3>
+<Event4>1.50</Event4>
+<Event5>68.44</Event5>
+<Event6>19.18</Event6>
+<Event7>30.85</Event7>
+<Event8>2.80</Event8>
+<Event9>33.88</Event9>
+<Event10>6.22.75 </Event10>
+<Score>3499</Score>
+</participant>
+<participant>
+<place>3-4</place>
+<Name>Beata Kana</Name>
+<Event1>13.04</Event1>
+<Event2>4.53</Event2>
+<Event3>7.79</Event3>
+<Event4>1.55</Event4>
+<Event5>64.72</Event5>
+<Event6>18.74</Event6>
+<Event7>24.20</Event7>
+<Event8>2.40</Event8>
+<Event9>28.20</Event9>
+<Event10>6.50.76 </Event10>
+<Score>3205</Score>
+</participant>
+<participant>
+<place>3-4</place>
+<Name>Duplicate Guy</Name>
+<Event1>13.04</Event1>
+<Event2>4.53</Event2>
+<Event3>7.79</Event3>
+<Event4>1.55</Event4>
+<Event5>64.72</Event5>
+<Event6>18.74</Event6>
+<Event7>24.20</Event7>
+<Event8>2.40</Event8>
+<Event9>28.20</Event9>
+<Event10>6.50.76 </Event10>
+<Score>3205</Score>
+</participant>
+<participant>
+<place>5</place>
+<Name>Anti Loop</Name>
+<Event1>13.43</Event1>
+<Event2>4.35</Event2>
+<Event3>8.64</Event3>
+<Event4>1.50</Event4>
+<Event5>66.06</Event5>
+<Event6>19.05</Event6>
+<Event7>24.89</Event7>
+<Event8>2.20</Event8>
+<Event9>33.48</Event9>
+<Event10>6.51.01</Event10>
+<Score>3104</Score>
+</participant>
+</participants>

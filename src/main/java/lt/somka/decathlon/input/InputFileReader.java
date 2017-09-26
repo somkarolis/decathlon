@@ -12,7 +12,7 @@ import java.util.List;
 public class InputFileReader {
     private List<Participant> participants;
     //default input file name
-    private String inputFileName = "Decathlon_input";
+    private String inputFileName;
     BufferedReader br;
 
     public List<Participant> readFile() throws FileNotFoundException, IOException {
